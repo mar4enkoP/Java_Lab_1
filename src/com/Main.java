@@ -80,19 +80,26 @@ public class Main {
                 System.out.println( 2 * Math.pow(i, 2) + 29);
     }
     /**
-     *
+     *Какими цифрами следует заменить а и b, чтобы выполнялось уравнение (а + а) + 3(b + b) = аa + bb?
      */
-    public static void Task136(){
-
+    public static void Task136() {
+        int a = 1, b = 1, i = 0;
+        for (;  a != 10; a++) {
+            System.out.println("a: "+ a +"\tb: " + b +"\n");
+            b = 1;
+            for (; b != 10; b++) {
+                System.out.println("a: "+ a +"\tb: " + b +"\n");
+                if ((a + a) + 3 * (b + b) == a * a + b * b) { System.out.println("---------\nAnswer\na: "+ a + "\nb: " + b +"\n---------\n");}
+            }
+        }
     }
-
 
     public static void main(String[] args) {
        // Variant();
        // Task36();
        // Task61();
        // Task86();
-        Task111();
+        //Task111();
         Task136();
     }
 
