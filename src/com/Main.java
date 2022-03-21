@@ -37,7 +37,7 @@ public class Main {
     }
 
     /**
-     *Составить программу возведения натурального числа в квадрат, учитывая следующую закономерность:
+     * Составить программу возведения натурального числа в квадрат, учитывая следующую закономерность:
      * 1^2 = 1
      * 2^2 = 1 + 3
      * 3^2 = 1 + 3 + 5
@@ -54,10 +54,19 @@ public class Main {
         System.out.println("Answer: " + num);
     }
     /**
-     *
+     * Известно сопротивление каждого из элементов электрической цепи. Определить общее сопротивление цепи, если:
+     * а) все элементы соединены последовательно;
+     * б) все элементы соединены параллельно.
      */
     public static void Task86(){
-
+    int R1, R2;
+    float general;
+    R1 =4;
+    R2 =9;
+    general = (R1*R2)/(R1+R2); //parallel
+    System.out.println("параллельно :" + general);
+    general = R1+R2;          //consistently
+    System.out.println("последовательно :" + general);
     }
     /**
      *
@@ -76,7 +85,7 @@ public class Main {
     public static void main(String[] args) {
        // Variant();
        // Task36();
-        Task61();
+       // Task61();
         Task86();
         Task111();
         Task136();
