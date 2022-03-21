@@ -64,15 +64,20 @@ public class Main {
     R1 =4;
     R2 =9;
     general = (R1*R2)/(R1+R2); //parallel
-    System.out.println("параллельно :" + general);
+    System.out.println("parallel :" + general);
     general = R1+R2;          //consistently
-    System.out.println("последовательно :" + general);
+    System.out.println("consistently :" + general);
     }
     /**
-     *
+     * Составить программу-генератор простых чисел, в основу положить формулу 2х^2 + 29 при 0 ≤ х ≤ 28.
      */
     public static void Task111(){
-
+        int x=3;
+        if (x < 0 || x > 28)
+            System.out.println("Enter number in the limit 0 ≤ х ≤ 28.");
+        else
+            for (int i=0; i<=x; ++i)
+                System.out.println( 2 * Math.pow(i, 2) + 29);
     }
     /**
      *
@@ -86,7 +91,7 @@ public class Main {
        // Variant();
        // Task36();
        // Task61();
-        Task86();
+       // Task86();
         Task111();
         Task136();
     }
